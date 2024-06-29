@@ -26,9 +26,9 @@ FILE_PATH = os.path.join(DATASETS_PATH, ATTACK_NAME, DATASET_NAME)
 
 data = pd.read_csv(FILE_PATH)
 
-plots_dir = f'../../{ATTACK_NAME}/{MODEL_NAME}/{DATASET_NAME}/plots'
-results_dir = f'../../{ATTACK_NAME}/{MODEL_NAME}/{DATASET_NAME}/results'
-models_dir = f'../../{ATTACK_NAME}/{MODEL_NAME}/{DATASET_NAME}/models'
+plots_dir = f'{ATTACK_NAME}/{MODEL_NAME}/{DATASET_NAME}/plots'
+results_dir = f'{ATTACK_NAME}/{MODEL_NAME}/{DATASET_NAME}/results'
+models_dir = f'{ATTACK_NAME}/{MODEL_NAME}/{DATASET_NAME}/models'
 
 if not os.path.exists(plots_dir):
     os.makedirs(plots_dir)

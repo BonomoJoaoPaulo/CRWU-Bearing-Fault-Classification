@@ -15,9 +15,9 @@ ATTACK_NAME = "fault"
 DATASET_NAME = "mapped_dataset.csv"
 MAX_ITER = 20000
 
-plots_dir = f'../{ATTACK_NAME}/{MODEL_NAME}/{DATASET_NAME}/max_iter{MAX_ITER}/plots'
-results_dir = f'../{ATTACK_NAME}/{MODEL_NAME}/{DATASET_NAME}/max_iter{MAX_ITER}/results'
-models_dir = f'../{ATTACK_NAME}/{MODEL_NAME}/{DATASET_NAME}/max_iter{MAX_ITER}/models'
+plots_dir = f'{ATTACK_NAME}/{MODEL_NAME}/{DATASET_NAME}/max_iter{MAX_ITER}/plots'
+results_dir = f'{ATTACK_NAME}/{MODEL_NAME}/{DATASET_NAME}/max_iter{MAX_ITER}/results'
+models_dir = f'{ATTACK_NAME}/{MODEL_NAME}/{DATASET_NAME}/max_iter{MAX_ITER}/models'
 
 if not os.path.exists(plots_dir):
     os.makedirs(plots_dir)
@@ -27,7 +27,7 @@ if not os.path.exists(models_dir):
     os.makedirs(models_dir)
 
 # Carregar o conjunto de dados (substitua 'seu_arquivo.csv' pelo caminho do seu arquivo CSV real)
-data = pd.read_csv(f'../dataset/{ATTACK_NAME}/{DATASET_NAME}')
+data = pd.read_csv(f'dataset/{ATTACK_NAME}/{DATASET_NAME}')
 
 # Dividir o conjunto de dados em features (X) e rótulos (y)
 X = data.drop(f'{ATTACK_NAME}', axis=1)  # Substitua 'target_column' pelo nome da coluna de destino
