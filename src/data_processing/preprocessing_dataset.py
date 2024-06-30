@@ -35,5 +35,7 @@ df = pd.read_csv(file_path)
 print(df['fault'].value_counts())
 df = map_faults(df)
 
-df.to_csv(os.path.join(DATASETS_PATH, 'mapped_dataset.csv'), index=False)
+df = df.drop(columns=['rms'])
+    
+df.to_csv(os.path.join(DATASETS_PATH, 'mapped_dataset_2.csv'), index=False)
 

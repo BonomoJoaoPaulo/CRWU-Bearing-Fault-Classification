@@ -12,7 +12,7 @@ import joblib
 
 MODEL_NAME = "LogisticRegression"
 ATTACK_NAME = "fault"
-DATASET_NAME = "mapped_dataset.csv"
+DATASET_NAME = "mapped_dataset_2.csv"
 MAX_ITER = 20000
 
 plots_dir = f'../{ATTACK_NAME}/{MODEL_NAME}/{DATASET_NAME}/max_iter{MAX_ITER}/plots'

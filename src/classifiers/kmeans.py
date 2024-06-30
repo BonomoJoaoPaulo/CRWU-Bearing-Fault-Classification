@@ -21,7 +21,7 @@ PLOTS_PATH = os.path.join(ROOT_PATH, 'plots')
 
 MODEL_NAME = "KMeans"
 ATTACK_NAME = "fault"
-DATASET_NAME = "mapped_dataset.csv"
+DATASET_NAME = "mapped_dataset_2.csv"
 FILE_PATH = os.path.join(DATASETS_PATH, ATTACK_NAME, DATASET_NAME)
 
 data = pd.read_csv(FILE_PATH)

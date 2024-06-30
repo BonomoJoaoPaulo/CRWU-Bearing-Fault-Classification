@@ -12,7 +12,7 @@ import joblib
 
 MODEL_NAME = "SVC"
 ATTACK_NAME = "fault"
-DATASET_NAME = "mapped_dataset.csv"
+DATASET_NAME = "mapped_dataset_2.csv"
 
 plots_dir = f'../{ATTACK_NAME}/{MODEL_NAME}/{DATASET_NAME}/plots'
 results_dir = f'../{ATTACK_NAME}/{MODEL_NAME}/{DATASET_NAME}/results'
